@@ -29,6 +29,7 @@ public class RendererFactory {
 
     static {
         Map<String, Class<? extends Renderer>> map = new TreeMap<>();
+        map.put(WalkModHubRenderer.NAME, WalkModHubRenderer.class);
         map.put(CodeClimateRenderer.NAME, CodeClimateRenderer.class);
         map.put(XMLRenderer.NAME, XMLRenderer.class);
         map.put(IDEAJRenderer.NAME, IDEAJRenderer.class);
